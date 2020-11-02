@@ -43,7 +43,5 @@ public class ProductRESTController {
 	@DeleteMapping(value="/products/{id}")
 	public void delete(@PathVariable (value="id") int id){
 		repo.deleteById(id);
-		return;
 	}
-
 }
